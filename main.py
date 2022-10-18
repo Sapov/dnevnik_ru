@@ -27,8 +27,8 @@ def print_homework():
     return lst_homework
 
 
-def scheduller():
-    schedule.every().day.at("2:35").do(main)
+# def scheduller():
+#     schedule.every().day.at("19:31").do(main)
 
 
 def main():
@@ -43,4 +43,4 @@ def main():
 
 
 if __name__ == '__main__':
-    scheduller()
+    main()
