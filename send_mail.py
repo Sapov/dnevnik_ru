@@ -1,7 +1,7 @@
 import smtplib
 from email.mime.text import MIMEText
 from email.header import Header
-from data import yandex_login
+from data_pass import yandex_login
 
 
 def send_mail(message: str, subject: str, dest_email: str):

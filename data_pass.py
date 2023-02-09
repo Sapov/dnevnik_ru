@@ -27,3 +27,5 @@ tel = '+79802423868'  # телефон на который отправляем 
 userID = 1000012607869  # id Ребенка
 idschool = 1000009667923  # id Школы
 id_class = '1954317477813377864'  # id класса
+mail_phather = 'sapov@mail.ru'
+mail_mather = 'grechanka83@mail.ru'
