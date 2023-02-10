@@ -50,7 +50,8 @@ if __name__ == '__main__':
     schedule.every().tuesday.at("11:10").do(main)
     schedule.every().wednesday.at("11:00").do(main)
     schedule.every().thursday.at("11:25").do(main)
-    schedule.every().friday.at("11:00").do(main)
+    # schedule.every().friday.at("11:00").do(main)
+    schedule.every().sunday.at("11:00").do(main)
     while True:
         schedule.run_pending()
         sleep(1)
