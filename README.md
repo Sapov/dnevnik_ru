@@ -2,4 +2,6 @@
 
 
 For posting Homeworks in Whatsupp
-Получаем Домашнее задание ребенка себе в WhatsApp
+Получаем Домашнее задание ребенка себе в WhatsApp или почту
+
+
