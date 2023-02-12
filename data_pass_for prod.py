@@ -1,4 +1,4 @@
-yandex_login = 'password _yandex_account'
+yandex_login = 'oEm8rah9reds'
 
 
 # если измениться можно тоже подсмотреть в коде страницы с домашкой
@@ -19,13 +19,13 @@ items = {5261533636965899: 'Рус. язык',
 
          5286921188658092: 'Чтение'}
 
-login = "login"  # login в Dnevnik.ru
-password = "password"  # password Dnevnik.ru
-tel = '+77897898888'  # телефон на который отправляем домашку
+login = "sapovilia"  # login в Dnevnik.ru
+password = "oEm8rah9dn"  # password Dnevnik.ru
+tel = '+79802423868'  # телефон на который отправляем домашку
 
 # можно узнать залогинившись в коде возвращенной страницы. Кое что видно прямо в строеке.
-userID = 1000012644469  # id Ребенка
-idschool = 1000009888923  # id Школы
-id_class = '1954317444413377864'  # id класса
-mail_phather = 'father@mail.ru'
-mail_mather = 'mather@mail.ru'
+userID = 1000012607869  # id Ребенка
+idschool = 1000009667923  # id Школы
+id_class = '1954317477813377864'  # id класса
+mail_phather = 'sapov@mail.ru'
+mail_mather = 'grechanka83@mail.ru'
