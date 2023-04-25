@@ -1,5 +1,5 @@
-yandex_login = 'password _yandex_account'
-
+gmail_pass = 'pass_gmail' # пароль от почты или приложения в Google
+MAIL_FROM = 'accounte@gmail.com' # Goole - почта
 
 # если измениться можно тоже подсмотреть в коде страницы с домашкой dnevnik.ru
 items = {5261533636965899: 'Рус. язык',
@@ -21,7 +21,6 @@ items = {5261533636965899: 'Рус. язык',
 
 login = "login"  # login в Dnevnik.ru
 password = "password"  # password Dnevnik.ru
-tel = '+77897898888'  # телефон на который отправляем домашку
 
 # можно узнать залогинившись в коде возвращенной страницы. Кое что видно прямо в строеке.
 userID = 1000012644469  # id Ребенка

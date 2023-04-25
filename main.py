@@ -1,6 +1,6 @@
 from pydnevnikruapi.dnevnik import dnevnik
 from datetime import datetime, time
-import data_pass_for_prod
+import data_pass
 import schedule
 from send_mail import send_mail
 
@@ -11,12 +11,12 @@ from time import sleep
 def print_homework(login, password):
     dn = dnevnik.DiaryAPI(login, password)
     curent_datetime = datetime.now()
-    a = dn.get_school_homework(data_pass_for_prod.idschool,
+    a = dn.get_school_homework(data_pass.idschool,
                                datetime(curent_datetime.year, curent_datetime.month, curent_datetime.day + 1),
                                datetime(curent_datetime.year, curent_datetime.month, curent_datetime.day + 1))
     lst_homework = []
     for i in a['works']:
-        lst_homework.append(f'{"=" * 4} Предмет: {data_pass_for_prod.items[i["subjectId"]]} {"=" * 4}\nЗадание:{i["text"]}\n')
+        lst_homework.append(f'{"=" * 4} Предмет: {data_pass.items[i["subjectId"]]} {"=" * 4}\nЗадание:{i["text"]}\n')
     return lst_homework
 
 
@@ -26,14 +26,14 @@ def main():
     print(type(today_))
     time_format = today_.strftime('%d/%m/%y')
 
-    lst = print_homework(login=data_pass_for_prod.login, password=data_pass_for_prod.password)
+    lst = print_homework(login=data_pass.login, password=data_pass.password)
     text = str(f'{"-" * 6} Дата: {time_format} {"-" * 6}\n\n')
     for i in range(len(lst)):
         text += lst[i] + " \n"
     print(text)
 
-    send_mail(text, f'Илюшкина домашка на {time_format}', dest_email=data_pass_for_prod.mail_mather)
-    send_mail(text, f'Илюшкина домашка на {time_format}', dest_email=data_pass_for_prod.mail_phather)
+    send_mail(text, f'Илюшкина домашка на {time_format}', dest_email=data_pass.mail_mather)
+    send_mail(text, f'Илюшкина домашка на {time_format}', dest_email=data_pass.mail_phather)
 
 
     # pywhatkit.sendwhatmsg('data.tel', text, 0, 53, 15, True, 2)

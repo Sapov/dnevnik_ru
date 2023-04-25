@@ -1,7 +1,7 @@
 import smtplib
 from email.mime.text import MIMEText
 from email.header import Header
-from data_pass_for_prod import gmail_pass, MAIL_FROM
+from data_pass import gmail_pass, MAIL_FROM
 
 
 def send_mail(message: str, subject: str, dest_email: str):

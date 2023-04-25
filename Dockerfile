@@ -1,4 +1,5 @@
-#docker build . -t docker-dnevnic.ru
+#docker build . -t docker-dnevnic.ru && docker run -d docker-dnevnic.ru && docker update --restart unless-stopped docker-dnevnic.ru
+
 FROM python:alpine
  #создаем директорию
 WORKDIR /app
@@ -6,8 +7,5 @@ WORKDIR /app
 COPY . /app
 #устанавливаем зависимости
 RUN pip install -r requirements.txt
-
-# открывает 5000 порт
-EXPOSE 5000
 
 CMD [ "python3", "main.py" ]
