@@ -1,4 +1,6 @@
-yandex_login = 'oEm8rah9redsdrtt'
+gmail_pass = 'xnkzyhhdizpajhtr'
+MAIL_FROM = 'rpk.reds@gmail.com'
+
 
 
 # если измениться можно тоже подсмотреть в коде страницы с домашкой
@@ -20,7 +22,7 @@ items = {5261533636965899: 'Рус. язык',
          5286921188658092: 'Чтение'}
 
 login = "sapovilia"  # login в Dnevnik.ru
-password = "oEm8rah9dn"  # password Dnevnik.ru
+password = "Em8rah9%"  # password Dnevnik.ru
 tel = '+79802423868'  # телефон на который отправляем домашку
 
 # можно узнать залогинившись в коде возвращенной страницы. Кое что видно прямо в строеке.
