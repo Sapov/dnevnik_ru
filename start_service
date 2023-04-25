@@ -1,0 +1,6 @@
+#!/bin/bash
+
+
+echo 'Сборка докера'
+docker build . -t dnevnic.ru && docker run -d dnevnic.ru && docker update --restart unless-stopped dnevnic.ru
+
