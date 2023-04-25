@@ -6,3 +6,5 @@
 2. Запустить контейнер docker run -d domashka
 3. Вводим чтоб сам контейнер перезапускался docker update --restart unless-stopped domashka
 
+или запускаем BASH скрипт  start_service
+
